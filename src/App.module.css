@@ -15,7 +15,8 @@ h1 {
 	display: inline;
 	position: relative;
 	font: 100px Helvetica, Sans-Serif;
-	letter-spacing: -5px;
+    letter-spacing: -5px;
+    text-align: center;
 	color: rgba(0,0,255,0.5); 
 }
 
@@ -25,6 +26,9 @@ h1:after {
     left: -2px;
     top: 4px;
 	color: rgba(255,0,0,0.5);   
+}
+h3 {
+    text-align: center;
 }
 
 @media only screen and (max-width: 770px) {
@@ -40,7 +44,8 @@ h1:after {
         position: relative;
         font: 76px Helvetica, Sans-Serif;
         letter-spacing: -5px;
-        text-align: center;
+        
         color: rgba(0,0,255,0.5);
     }
+
 }

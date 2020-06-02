@@ -63,7 +63,7 @@ const Chart = ({ data: { confirmed, recovered, deaths }, country }) => {
   );
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} data-aos="zoom-out">
       {country ? barChart : lineChart}
     </div>
   );

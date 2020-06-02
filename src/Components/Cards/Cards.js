@@ -13,7 +13,7 @@ const Info = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
   return (
     <div className={styles.container}>
       <Grid container spacing={3} justify="center">
-        <Grid item xs={12} md={3} component={Card} className={cx(styles.card, styles.infected , styles.pulse3)}>
+        <Grid item xs={12} md={3} component={Card} className={cx(styles.card, styles.infected , styles.pulse3)} data-aos="fade-right">
           <CardContent>
             <Typography  gutterBottom>
               Infected
@@ -29,7 +29,7 @@ const Info = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
             </Typography>
           </CardContent>
         </Grid>
-        <Grid item xs={12} md={3} component={Card} className={cx(styles.card, styles.recovered , styles.pulse2)}>
+        <Grid item xs={12} md={3} component={Card} className={cx(styles.card, styles.recovered , styles.pulse2)} data-aos="zoom-out">
           <CardContent>
             <Typography  gutterBottom>
               Recovered
@@ -45,7 +45,7 @@ const Info = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
             </Typography>
           </CardContent>
         </Grid>
-        <Grid item xs={12} md={3} component={Card} className={cx(styles.card, styles.deaths , styles.pulse1)}>
+        <Grid item xs={12} md={3} component={Card} className={cx(styles.card, styles.deaths , styles.pulse1)} data-aos="fade-left">
           <CardContent>
             <Typography  gutterBottom>
               Deaths

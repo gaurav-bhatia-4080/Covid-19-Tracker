@@ -17,18 +17,16 @@ const Countries = ({ handleCountryChange }) => {
   }, []);
 
   return (
-
-      <FormControl variant="outlined" className={styles.formControl}>
-        <InputLabel>
-          Country
-        </InputLabel>
-        <Select label="Country" onChange={(e) => handleCountryChange(e.target.value)}>
-          <MenuItem value="">Global</MenuItem>
-          {countries.map((country, i) => <MenuItem key={i} value={country}> {country} </MenuItem>)}
-        </Select>
-      </FormControl>
-
-
+      
+        <FormControl variant="outlined" className={styles.formControl}>
+          <InputLabel>
+            Country
+          </InputLabel>
+          <Select label="Country" onChange={(e) => handleCountryChange(e.target.value)}>
+            <MenuItem value="">Global</MenuItem>
+            {countries.map((country, i) => <MenuItem key={i} value={country}> {country} </MenuItem>)}
+          </Select>
+        </FormControl>
 
 
   );

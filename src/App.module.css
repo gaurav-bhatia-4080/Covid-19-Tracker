@@ -1,14 +1,32 @@
 body {
     background-color: rgb(250, 250,250);
+    /* font-family: 'Montserrat', sans-serif; */
   }
-  
+*{
+    transition: all 1s ease;
+}
 .container {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-  
+h1 {
+	display: inline;
+	position: relative;
+	font: 100px Helvetica, Sans-Serif;
+	letter-spacing: -5px;
+	color: rgba(0,0,255,0.5); 
+}
+
+h1:after {
+	content: "Covid-19 Tracker";
+    position: absolute;
+    left: -2px;
+    top: 4px;
+	color: rgba(255,0,0,0.5);   
+}
+
 @media only screen and (max-width: 770px) {
     .container {
         margin: 0 10%;
@@ -16,5 +34,13 @@ body {
 
     .image {
         width: 100%;
+    }
+    h1 {
+        display: inline;
+        position: relative;
+        font: 76px Helvetica, Sans-Serif;
+        letter-spacing: -5px;
+        text-align: center;
+        color: rgba(0,0,255,0.5);
     }
 }

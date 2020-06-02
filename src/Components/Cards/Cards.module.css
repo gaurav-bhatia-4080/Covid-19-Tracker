@@ -4,25 +4,69 @@
     align-items: center;
     margin: 50px 0;
   }
+  *{
+    transition: all 1s ease;
+  }
   
   .card {
     margin: 0 2% !important;
   }
   
   .infected {
-    border-bottom: 10px solid rgba(0, 0, 255, 0.5);
+    border: 10px solid rgba(0, 0, 255, 0.5);
   }
   
   .recovered{
-    border-bottom: 10px solid rgba(0, 255, 0, 0.5);
+    border: 10px solid rgba(0, 255, 0, 0.5);
   }
   
   .deaths{
-    border-bottom: 10px solid rgba(255, 0, 0, 0.5);
+    border: 10px solid rgba(255, 0, 0, 0.5);
   }
-  
-  @media only screen and (max-width: 770px) {
-    .card {
-      margin: 2% 0 !important;
-    }
+
+@keyframes shadow-pulse1
+{
+  0% {
+    box-shadow: 0 0 0 0px rgba(255, 0, 0, 0.4);
   }
+  100% {
+    box-shadow: 0 0 0 20px rgba(255, 0, 0, 0.0);
+  }
+}
+.pulse1
+{
+  animation: shadow-pulse1 1s infinite;
+}
+@keyframes shadow-pulse2
+{
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 255, 0, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(0, 255, 0, 0.0);
+  }
+}
+.pulse2
+{
+  animation: shadow-pulse2 1s infinite;
+}
+@keyframes shadow-pulse3
+{
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 255, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(0, 0, 255, 0.0);
+  }
+}
+.pulse3
+{
+  animation: shadow-pulse3 1s infinite;
+}
+
+@media only screen and (max-width: 770px) {
+  .card {
+    margin: 2% 0 !important;
+  }
+}
+
